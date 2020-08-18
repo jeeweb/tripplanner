@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>TripPlanner</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Nanum+Gothic&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script
+      src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+      integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/642e975ea7.js"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(function () {
+        var dateFormat = 'yy/mm/dd',
+          from = $('#dateDepart')
+            .datepicker({
+              defaultDate: '+1w',
+              changeMonth: true,
+              numberOfMonths: 1,
+            })
+            .on('change', function () {
+              to.datepicker('option', 'minDate', getDate(this));
+            }),
+          to = $('#dateReturn')
+            .datepicker({
+              defaultDate: '+1w',
+              changeMonth: true,
+              numberOfMonths: 1,
+            })
+            .on('change', function () {
+              from.datepicker('option', 'maxDate', getDate(this));
+            });
+
+        function getDate(element) {
+          var date;
+          try {
+            date = $.datepicker.parseDate(dateFormat, element.value);
+          } catch (error) {
+            date = null;
+          }
+
+          return date;
+        }
+      });
+    </script>
+  </head>
+  <body>
+    <div class="wrap">
+      <section class="cnt_main">
+        <h1 class="logo p_r">
+          <img src="image/logo_main_shadow.png" alt="" class="logo_shadow" />
+          <img
+            src="image/logo_main_white.png"
+            alt="tripplanner"
+            class="logo_front"
+          />
+        </h1>
+        <div class="search_form">
+          <div class="form_top clearfix">
+            <div class="input_field">
+              <label for="dateDepart">출발일</label>
+              <input type="text" id="dateDepart" class="input_item" />
+            </div>
+            <div class="input_field">
+              <label for="dateReturn">도착일</label>
+              <input type="text" id="dateReturn" class="input_item" />
+            </div>
+            <div class="input_field">
+              <label for="travellersNum">인원수</label>
+              <select
+                name="travellersNum"
+                id="travellersNum"
+                class="input_item"
+              >
+                <option value="1">혼자</option>
+                <option value="2">2명</option>
+                <option value="3">3명</option>
+                <option value="4">4명</option>
+                <option value="5">5명</option>
+                <option value="6">6명</option>
+              </select>
+            </div>
+            <div class="input_field">
+              <label for="travelCityNum">여행지수(도시)</label>
+              <select
+                name="travelCityNum"
+                id="travelCityNum"
+                class="input_item"
+              >
+                <option value="1">1곳</option>
+                <option value="2">2곳 이상</option>
+              </select>
+              <input type="text" class="input_item input_item_cities" />
+            </div>
+          </div>
+          <div class="form_btm">
+            <div class="input_field">
+              <label for="tripTheme">이번 여행의 테마</label>
+              <input type="text" id="tripTheme" />
+            </div>
+          </div>
+          <div class="btn_box">
+            <a href="sub.html" class="btn btn_submit">GO!</a>
+          </div>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <p>Jiee Kong All right reserved.</p>
+      </footer>
+    </div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
