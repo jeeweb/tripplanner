@@ -1,0 +1,76 @@
+@charset "UTF-8";
+
+/* ========== index.html ========== */
+.bg {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  top: 0;
+  height: 60%;
+  background: url('../image/main_bg.jpg') left top no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.cnt_main {
+  z-index: 10;
+}
+.cnt_main .logo {
+  width: 791px;
+  height: 135px;
+  margin: 0px auto;
+}
+.cnt_main .logo img {
+  position: absolute;
+  left: 0;
+  top: 0px;
+}
+.cnt_main .logo .logo_shadow {
+  left: 3px;
+  top: 4px;
+}
+.cnt_main .search_form {
+  width: 1000px;
+  margin: 8% auto 0;
+  padding: 32px;
+  background-color: #fff;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  box-shadow: 5px 0 10px 0 rgba(0, 0, 0, 0.3);
+}
+.search_form > div {
+  width: 968px;
+  text-align: left;
+  margin-bottom: 16px;
+}
+.search_form .form_top {
+  display: flex;
+  justify-content: space-between;
+}
+.search_form .input_field label {
+  display: block;
+  padding-bottom: 8px;
+}
+.search_form .form_top .input_field .input_item {
+  width: 144px;
+  height: 40px;
+}
+.search_form .form_top .input_field:last-child .input_item:last-child {
+  width: 277px;
+  margin-left: 14px;
+}
+.search_form .form_btm .input_field input[type='text'] {
+  width: 100%;
+}
+.search_form .btn_box {
+  margin-top: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.search_form .btn_box .btn_submit {
+  width: 112px;
+  text-align: center;
+}

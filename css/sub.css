@@ -1,0 +1,159 @@
+/* ========== sub.html ========== */
+.sub_wrap {
+  display: flex;
+}
+/* .lnb */
+.lnb {
+  width: 296px;
+  height: 100vh;
+  padding: 24px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background: lightblue;
+}
+.lnb h1 {
+  font-size: 32px;
+}
+.lnb .btn_memo {
+  position: relative;
+  padding: 16px 0;
+  font-size: 14px;
+}
+.lnb .btn_memo:hover::after,
+.lnb .btn_memo:focus::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 10px;
+  height: 2px;
+  background-color: #333;
+}
+.schedule .day .trip_date {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.schedule .day .trip_date > span {
+  font-size: 20px;
+  font-weight: bold;
+}
+.schedule .day .trip_date > .fas {
+  float: right;
+  -webkit-transition: transform 0.6s;
+  -moz-transition: transform 0.6s;
+  -o-transition: transform 0.6s;
+  transition: transform 0.6s;
+}
+.schedule .day .event {
+  display: none;
+}
+
+.schedule .day.on .trip_date {
+  color: darkcyan;
+}
+.schedule .day.on .trip_date > .fas {
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+.lnb .footer {
+  position: absolute;
+  bottom: 24px;
+  left: 24px;
+}
+
+/* .cnt_sub */
+.cnt_wrap {
+  flex-grow: 1;
+  height: 100vh;
+  padding: 24px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.cnt_top .tab {
+  display: flex;
+}
+.cnt_top .tab .tab_tit a {
+  display: block;
+  padding: 0 16px;
+  font-size: 24px;
+}
+.cnt_top .tab .tab_tit:first-child a {
+  padding-left: 0;
+}
+.cnt_top .tab .tab_tit a span {
+  position: relative;
+}
+.cnt_top .tab .tab_tit a span::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 0;
+  bottom: -8px;
+  height: 4px;
+  background: #333;
+  -webkit-transition: width 0.5s;
+  -moz-transition: width 0.5s;
+  -o-transition: width 0.5s;
+  transition: width 0.5s;
+}
+.cnt_top .tab .tab_tit.on a {
+  font-weight: bold;
+}
+.cnt_top .tab .tab_tit.on a span::after {
+  width: 100%;
+}
+
+.cnt {
+  margin-top: 16px;
+}
+.cnt .tab_cnt {
+  display: none;
+}
+.cnt .tab_cnt.show {
+  display: block;
+}
+
+.cnt .search_result .result_list {
+  margin-top: 24px;
+}
+
+.cnt .search_result .result_list ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+.cnt .search_result .result_list ul li + li {
+  margin-left: 12px;
+}
+
+.cnt .search_result .result_list ul li a {
+  display: block;
+  background: yellow;
+}
+
+/* .cnt_spots */
+.cnt_spots .search_box {
+  display: flex;
+  align-items: center;
+}
+.cnt_spots .search_box .city_search {
+  width: 50%;
+}
+.cnt_spots .search_result .list_tit {
+  font-size: 20px;
+  font-weight: 700;
+}
+.cnt_spots .search_result .result_list ul li {
+  float: left;
+}
+.cnt_spots .search_result .result_list ul li a {
+  width: 160px;
+  height: 160px;
+}

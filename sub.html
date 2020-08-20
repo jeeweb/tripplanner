@@ -1,159 +1,164 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>TripPlanner</title>
-    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://kit.fontawesome.com/642e975ea7.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/642e975ea7.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="js/script.js"></script>
-</head>
-<body>
+  </head>
+  <body>
     <div class="wrap sub_wrap">
-        <section class="lnb p_r">
-            <div class="header">
-                <h1 class="logo"><a href="index.html">TripPlanner</a></h1>
-            </div>
-            <button type="button" class="btn_memo">직접입력하기</button>
-            <ul class="schedule">
-                <li class="day">
-                    <a href="#" class="trip_date clearfix">
-                        <span>20/04/30</span>
-                        <i class="fas fa-angle-down"></i>
-                    </a>
-                    <ul class="event">
-                        <li>
-                            <a href="#">abcdef</a>
-                        </li>
-                        <li>
-                            <a href="#">abcde</a>
-                        </li>
-                    </ul>
-                </li>
-                <li class="day">
-                    <a href="#" class="trip_date clearfix">
-                        <span>20/05/01</span>
-                        <i class="fas fa-angle-down"></i>
-                    </a>
-                    <ul class="event">
-                        <li>
-                            <a href="#">abc</a>
-                        </li>
-                        <li>
-                            <a href="#">abc</a>
-                        </li>
-                    </ul>
-                </li>
+      <section class="lnb p_r">
+        <div class="header">
+          <h1 class="logo"><a href="index.html">TripPlanner</a></h1>
+        </div>
+        <button type="button" class="btn_memo">직접입력하기</button>
+        <ul class="schedule">
+          <li class="day">
+            <a href="#" class="trip_date">
+              <span>20/04/30</span>
+              <i class="fas fa-angle-down"></i>
+            </a>
+            <ul class="event">
+              <li>
+                <a href="#">abcdef</a>
+              </li>
+              <li>
+                <a href="#">abcde</a>
+              </li>
             </ul>
-            <div class="footer">
-                <p>Jiee Kong All right reserved.</p>
-            </div>
-        </section>
+          </li>
+          <li class="day">
+            <a href="#" class="trip_date">
+              <span>20/05/01</span>
+              <i class="fas fa-angle-down"></i>
+            </a>
+            <ul class="event">
+              <li>
+                <a href="#">abc</a>
+              </li>
+              <li>
+                <a href="#">abc</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <div class="footer">
+          <p>Jiee Kong All right reserved.</p>
+        </div>
+      </section>
 
-        <section class="cnt_wrap cnt_sub">
-            <div class="cnt_top">
-                <ul class="tab clearfix">
-                    <li class="tab_tit on">
-                        <a href="#"><span>관광지/맛집</span></a>
-                    </li>
-                    <li class="tab_tit">
-                        <a href="#"><span>액티비티</span></a>
-                    </li>
-                    <li class="tab_tit">
-                        <a href="#"><span>참고하기</span></a>
-                    </li>
+      <section class="cnt_wrap cnt_sub">
+        <div class="cnt_top">
+          <ul class="tab">
+            <li class="tab_tit on">
+              <a href="#"><span>관광지/맛집</span></a>
+            </li>
+            <li class="tab_tit">
+              <a href="#"><span>액티비티</span></a>
+            </li>
+            <li class="tab_tit">
+              <a href="#"><span>참고하기</span></a>
+            </li>
+          </ul>
+        </div>
+        <div class="cnt">
+          <div class="tab_cnt cnt_spots show">
+            <div class="search_box p_r">
+              <input type="search" class="city_search" />
+              <button type="button" class="btn btn_search">검색</button>
+            </div>
+            <div class="search_result">
+              <div class="result_list">
+                <p class="list_tit">#<span class="city_name">방콕</span></p>
+                <ul class="insta_li clearfix">
+                  <li class="insta_thumb">
+                    <a href="#"></a>
+                  </li>
+                  <li class="insta_thumb">
+                    <a href="#"></a>
+                  </li>
                 </ul>
+              </div>
+              <div class="result_list">
+                <p class="list_tit">#<span class="city_name">방콕</span>여행</p>
+                <ul class="insta_li clearfix">
+                  <li class="insta_thumb">
+                    <a href="#"></a>
+                  </li>
+                </ul>
+              </div>
+              <div class="result_list">
+                <p class="list_tit">#<span class="city_name">방콕</span>맛집</p>
+                <ul class="insta_li clearfix">
+                  <li class="insta_thumb">
+                    <a href="#"></a>
+                  </li>
+                </ul>
+              </div>
             </div>
-            <div class="cnt">
-                <div class="tab_cnt cnt_spots show">
-                    <div class="search_box p_r">
-                        <input type="search" class="city_search">
-                        <button type="button" class="btn btn_search">검색</button>
-                    </div>
-                    <div class="search_result">
-                        <div class="result_list">
-                            <p class="list_tit">#<span class="city_name">방콕</span></p>
-                            <ul class="insta_li clearfix">
-                                <li class="insta_thumb">
-                                    <a href="#"></a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="result_list">
-                            <p class="list_tit">#<span class="city_name">방콕</span>여행</p>
-                            <ul class="insta_li clearfix">
-                                <li class="insta_thumb">
-                                    <a href="#"></a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="result_list">
-                            <p class="list_tit">#<span class="city_name">방콕</span>맛집</p>
-                            <ul class="insta_li clearfix">
-                                <li class="insta_thumb">
-                                    <a href="#"></a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="tab_cnt cnt_activities">
-                    <div class="search_box p_r">
-                        <input type="search">
-                        <button type="button" class="btn btn_search">검색</button>
-                    </div>
-                    <div class="result_list">
-                        <p class="list_tit">마이리얼트립</p>
-                        <ul class="clearfix">
-                            <li>
-                                <a href="#"></a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="result_list">
-                        <p class="list_tit">Airbnb Experience</p>
-                        <ul class="clearfix">
-                            <li>
-                                <a href="#"></a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="tab_cnt cnt_guide">
-                    <div class="search_box p_r">
-                        <input type="search">
-                        <button type="button" class="btn btn_search">검색</button>
-                    </div>
-                    <div class="result_list">
-                        <p class="list_tit">YouTube</p>
-                        <ul class="clearfix">
-                            <li>
-                                <a href="#"></a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="result_list">
-                        <p class="list_tit">Google</p>
-                        <ul class="clearfix">
-                            <li>
-                                <a href="#"></a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="result_list">
-                        <p class="list_tit">네이버 블로그</p>
-                        <ul class="clearfix">
-                            <li>
-                                <a href="#"></a>    
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+          </div>
+          <div class="tab_cnt cnt_activities">
+            <div class="search_box p_r">
+              <input type="search" />
+              <button type="button" class="btn btn_search">검색</button>
             </div>
-        </section>
+            <div class="result_list">
+              <p class="list_tit">마이리얼트립</p>
+              <ul class="clearfix">
+                <li>
+                  <a href="#"></a>
+                </li>
+              </ul>
+            </div>
+            <div class="result_list">
+              <p class="list_tit">Airbnb Experience</p>
+              <ul class="clearfix">
+                <li>
+                  <a href="#"></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="tab_cnt cnt_guide">
+            <div class="search_box p_r">
+              <input type="search" />
+              <button type="button" class="btn btn_search">검색</button>
+            </div>
+            <div class="result_list">
+              <p class="list_tit">YouTube</p>
+              <ul class="clearfix">
+                <li>
+                  <a href="#"></a>
+                </li>
+              </ul>
+            </div>
+            <div class="result_list">
+              <p class="list_tit">Google</p>
+              <ul class="clearfix">
+                <li>
+                  <a href="#"></a>
+                </li>
+              </ul>
+            </div>
+            <div class="result_list">
+              <p class="list_tit">네이버 블로그</p>
+              <ul class="clearfix">
+                <li>
+                  <a href="#"></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
-</body>
+  </body>
 </html>
