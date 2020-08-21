@@ -38,7 +38,7 @@
   -webkit-border-radius: 8px;
   -moz-border-radius: 8px;
   border-radius: 8px;
-  box-shadow: 5px 0 10px 0 rgba(0, 0, 0, 0.3);
+  box-shadow: 0 10px 50px 0 rgba(0, 0, 0, 0.2);
 }
 .search_form > div {
   width: 968px;

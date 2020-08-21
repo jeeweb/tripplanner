@@ -1,3 +1,14 @@
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    height: 0;
+  }
+  to {
+    opacity: 1;
+    height: 100%;
+  }
+}
+
 /* ========== sub.html ========== */
 .sub_wrap {
   display: flex;
@@ -10,7 +21,8 @@
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  background: lightblue;
+  background: #fff;
+  box-shadow: 3px 0 20px 0 rgba(0, 0, 0, 0.1);
 }
 .lnb h1 {
   font-size: 32px;
@@ -49,6 +61,10 @@
 }
 .schedule .day .event {
   display: none;
+}
+.schedule .day.on .event {
+  display: block;
+  animation: slideDown 1.5s;
 }
 
 .schedule .day.on .trip_date {
